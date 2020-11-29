@@ -1,0 +1,96 @@
+*{
+font-size: 28px;
+}
+.c1{
+position: absolute;
+right: 0%;
+}
+
+#n1{ 
+position: fixed;
+top: 5px;
+right: 5px;
+}
+
+#vv{
+
+}
+
+button{
+    color:burlywood;
+    /* font-size: larger; */
+    margin: 12px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 75px;
+    background-color:transparent ;
+    border: none;
+    transition-duration: 0.82s;
+}
+button:hover{
+ background-color: darkgoldenrod;
+ color: solid white;
+
+}
+body,html,ul,li,img,div{
+    margin:0; padding:0;
+}
+body{
+    width:25%;
+    margin:50px auto;
+    overflow: hidden;
+}
+.auto-slider img{
+
+    display: block;
+}
+.auto-slider{
+    outline-color: 5px solid red;
+    widows: 400px;
+    height: 224px;
+    overflow-x: hidden;
+}
+.auto-slider__content{
+    list-style-type: none;
+    display: flex;
+  animation-name:slide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+.auto-slider__content:hover{
+    animation-play-state: paused;}
+@keyframes slide{
+    10%{
+        transform:translateX(0);
+    }
+    15% ,30%{
+        transform:translateX(-350px);
+    }
+    35% ,50%{
+        transform:translateX(-800px);
+    }
+    10%{
+        transform:translateX(0);
+    }
+    
+    
+    }
+    https://source.unsplash.com/600x200/?code word document
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-success" type="submit">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
